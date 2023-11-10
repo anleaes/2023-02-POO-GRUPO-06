@@ -1,8 +1,8 @@
-from pessoa import pessoa
+from pessoa import Pessoa
 
-class pessoaFisica(pessoa):
-
-    def __int__(self, nome, endereco, cpf, data_nascimento):
-        super() .__init__(nome, endereco)
-        self._cpf = cpf
-        self._data_nascimento = data_nascimento
+class PessoaFisica(Pessoa):
+    def __init__(self, cpf, data_nascimento, pessoa):
+        super().__init__(pessoa.nome, pessoa.endereco)
+        self.cpf = cpf
+        self.data_nascimento = data_nascimento
+        self.pessoa = pessoa
