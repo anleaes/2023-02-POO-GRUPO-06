@@ -1,9 +1,9 @@
-from pessoa import pessoa
+from pessoa import Pessoa
 
-class pessoaJuridica (pessoa):
-
-    def __int__(self, nome, endereco, cnpj, razao_social, data_abertura):
-        super() .__init__(nome, endereco)
-        self._cnpj = cnpj
-        self._razao_social = razao_social
-        self._data_abertura = data_abertura
+class PessoaJuridica(Pessoa):
+    def __init__(self, cnpj, razao_social, data_abertura, pessoa):
+        super().__init__(pessoa.nome, pessoa.endereco)
+        self.cnpj = cnpj
+        self.razao_social = razao_social
+        self.data_abertura = data_abertura
+        self.pessoa = pessoa
