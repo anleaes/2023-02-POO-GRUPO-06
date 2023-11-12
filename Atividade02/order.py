@@ -1,11 +1,9 @@
-from client import Client
-
-class Order(Client):
-    def __init__(self, total_price , status , first_name, last_name, address, cell_phone, email, gender):
-        super() .__init__( id, first_name, last_name, address, cell_phone, email, gender)
+class Order:
+    def __init__(self, total_price, status, client):
         self.total_price = total_price
         self.status = status
-        
-        
+        self.client = client
+        self.order_items = []
 
- 
+    def __str__(self):
+        return f"\nPreco Total: {self.total_price}, Status: {self.status}, Cliente: {self.client}"
