@@ -1,11 +1,10 @@
-from product import Product
-
-class OrderItem(Product):
-    def __init__(self, quantity, unitary_price, name, description, date_fabrication, is_active):
-        super() .__init__(id, name, description, date_fabrication, is_active)
+class OrderItem:
+    def __init__(self, quantity, unitary_price, order, product):
         self.quantity = quantity
         self.unitary_price = unitary_price
-        
-        
+        self.order = order
+        self.product = product
+        order.order_items.append(self)
 
- 
+    def __str__(self):
+        return f"\nQuantidade: {self.quantity}, Preco Unitario: {self.unitary_price}, Ordem: {self.order}, Produto: {self.product}"
