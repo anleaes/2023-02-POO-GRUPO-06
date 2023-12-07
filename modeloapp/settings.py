@@ -52,6 +52,9 @@ INSTALLED_APPS = [
     'treinos.apps.TreinosConfig',
     'planoalimentar.apps.PlanoalimentarConfig',
     'Treinador.apps.TreinadorConfig',
+    'Cliente.apps.ClienteConfig',
+    'Alimento.apps.AlimentoConfig',
+    'Exercicio.apps.ExercicioConfig',
     'Nutricionista.apps.NutricionistaConfig',
     
     
