@@ -20,4 +20,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('categorias/', include('categories.urls', namespace='categories')),
     path('produtos/', include('products.urls', namespace='products')),
+    path('treinos/', include('treinos.urls', namespace='treinos')),
+    path('planoalimentar/', include('planoalimentar.urls', namespace='planoalimentar')),
 ]

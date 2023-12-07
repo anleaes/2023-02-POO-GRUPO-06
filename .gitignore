@@ -10,4 +10,9 @@ db.sqlite3
 /apps/clients/migrations/*
 /apps/orders/__pycache__/*
 /apps/orders/migrations/*
-
+/apps/treinos/__pycache__/*
+/apps/treinos/migrations/*
+/apps/Treinador/__pycache__/*
+/apps/Treinador/migrations/*
+/apps/planoalimentar/__pycache__/*
+/apps/planoalimentar/migrations/*

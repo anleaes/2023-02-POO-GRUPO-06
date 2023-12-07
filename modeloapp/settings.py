@@ -53,6 +53,12 @@ INSTALLED_APPS = [
     'orders.apps.OrdersConfig',
     'products.apps.ProductsConfig',
     'socialnetworks.apps.SocialnetworksConfig',
+    'treinos.apps.TreinosConfig',
+    'planoalimentar.apps.PlanoalimentarConfig',
+    'Treinador.apps.TreinadorConfig',
+    'Nutricionista.apps.NutricionistaConfig',
+    
+    
 ]
 
 MIDDLEWARE = [

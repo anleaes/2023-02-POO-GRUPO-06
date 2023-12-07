@@ -9,7 +9,7 @@ class Treinador(models.Model):
     class Meta:
         verbose_name = 'Treinador'
         verbose_name_plural = 'Treinador'
-        ordering =['id']
+        
 
     def __str__(self):
         return self.name
