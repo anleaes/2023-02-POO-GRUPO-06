@@ -5,7 +5,7 @@ from django.db import models
 class Academia(models.Model):
     endereço = models.CharField('Endereço', max_length=50)
     horarioFuncionamento = models.TextField('Descricao', max_length=100)
-    telefone = models.CharField(max_length=14, unique=True)
+    telefone = models.CharField('Telefone',max_length=14, unique=True)
     
     class Meta:
         verbose_name = 'Academia'
