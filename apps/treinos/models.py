@@ -8,7 +8,7 @@ class Treinos(models.Model):
     series = models.IntegerField('Quantidade',null=True, blank=True,default=0)
     repeticoes = models.IntegerField('Quantidade',null=True, blank=True,default=0)
     descanso = models.TextField('Descanso', max_length=100)
-    client = models.ForeignKey(Client, on_delete=models.CASCADE)
+    client = models.ForeignKey('cliente', on_delete=models.CASCADE)
     Treinador = models.ForeignKey(Treinador, on_delete=models.CASCADE)
     #exercicio = models.ForeignKey(Exercicio, on_delete=models.CASCADE)
 

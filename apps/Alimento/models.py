@@ -6,7 +6,7 @@ class Alimento(models.Model):
     nome = models.CharField(max_length=100)
     descricao = models.IntegerField()
     grupo = models.IntegerField()
-    kcal = models.CharField(max_length=14, unique=True
+    kcal = models.CharField(max_length=14, unique=True)
     
     class Meta:
         verbose_name = 'Alimento'
