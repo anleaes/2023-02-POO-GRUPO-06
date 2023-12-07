@@ -3,8 +3,9 @@ from django.db import models
 # Create your models here.
 
 class Academia(models.Model):
-    name = models.CharField('Nome', max_length=50)
-    description = models.TextField('Descricao', max_length=100)
+    endereço = models.CharField('Endereço', max_length=50)
+    horarioFuncionamento = models.TextField('Descricao', max_length=100)
+    telefone = models.CharField(max_length=14, unique=True
     
     class Meta:
         verbose_name = 'Academia'
