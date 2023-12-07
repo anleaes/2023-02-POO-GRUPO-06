@@ -1,7 +1,7 @@
 from .models import Exercicio
 from rest_framework import serializers
 
-class PessoaSerializer(serializers.ModelSerializer):
+class ExercicioSerializer(serializers.ModelSerializer):
     class Meta:
         model = Exercicio
         fields = '__all__'
