@@ -1,7 +1,7 @@
 from django.db import models
-from clients.models import Client
+from Cliente.models import Cliente
 from Nutricionista.models import Nutricionista  
-#from Alimentos.models import Alimentos
+from Alimentos.models import Alimentos
 
 # Create your models here.
 class Planoalimentar(models.Model):
