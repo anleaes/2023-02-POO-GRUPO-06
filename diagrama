@@ -1,0 +1,82 @@
+
+@startuml
+
+
+class Treinador {
+    nome
+    registro
+    especialidade
+    email
+    academia: Academia
+}
+
+class Nutricionista {
+    nome
+    registro
+    especialidade
+    email
+    academia: Academia
+}
+
+
+
+class Cliente {
+    nome
+    idade
+    gênero
+    dataNascimento
+    peso
+    altura
+    academia: Academia
+}
+
+class PlanoAlimentar { 
+    horariosRefeicoes: 
+    cliente: Cliente
+    nutricionista: Nutricionista
+    alimento: Alimento 
+}
+
+class Exercicio {
+    nome:
+    tipo: 
+    maquina: 
+    grupoMuscular:
+
+}
+
+class Treino {
+    series:
+    repetiçoes:
+    descanso:
+    exercicio: Exercicio
+    cliente: Cliente
+    treinador: Treinador
+}
+
+class Academia {
+    endereco: 
+    horarioFuncionamento: 
+    telefone:
+}
+
+class Alimento {
+    nome:
+    descreicao:
+    grupo: 
+    kcal: 
+    
+}
+
+
+
+Cliente  --* PlanoAlimentar
+Cliente --* Treino
+Treinador --* Treino
+Treino  *-- Exercicio
+Academia --* Treinador
+Academia --* Cliente
+Academia --* Nutricionista 
+Nutricionista --* PlanoAlimentar
+PlanoAlimentar *-- Alimento
+@enduml
