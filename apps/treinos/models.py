@@ -1,5 +1,5 @@
 from django.db import models
-from clients.models import Client
+#from treinos.models import models
 from Treinador.models import Treinador
 #from exercicio.models import Exercicio
 
