@@ -1,5 +1,6 @@
 db.sqlite3
 /modeloapp/__pycache__/*
+/modeloapp/migrations/*
 projetoapp//apps/academias/__pycache__/*
 projetoapp//apps/academias/migrations/*
 projetoapp//apps/clientes/__pycache__/*
