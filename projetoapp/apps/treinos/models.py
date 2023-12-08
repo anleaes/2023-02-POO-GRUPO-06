@@ -1,8 +1,8 @@
 from django.db import models
-#from treinos.models import models
-from treinador.models import Treinador
-from cliente.models import Cliente
-from exercicio.models import Exercicio
+from treinos.models import models
+from treinadores.models import Treinador
+from clientes.models import Cliente
+from exercicios.models import Exercicio
 
 # Create your models here.
 class Treino(models.Model):
