@@ -10,9 +10,17 @@ class Treino(models.Model):
     repeticao = models.IntegerField('Quantidade',null=True, blank=True,default=0)
     descanso = models.TextField('Descanso', max_length=100)
     cliente = models.ForeignKey('Cliente', on_delete=models.CASCADE)
-    treinador = models.ForeignKey('Treinador', on_delete=models.CASCADE)
+    treinador = models.ForeignKey(Treinador, on_delete=models.CASCADE)
     exercicio = models.ForeignKey('Exercicio', on_delete=models.CASCADE)
 
+
+    class Cliente(models.Model):
+
+        nome = models.CharField(max_length=100)
+
+    class Exercicio(models.Model):
+
+        nome = models.CharField(max_length=100)
 
     class Meta:
         verbose_name = 'Treino'

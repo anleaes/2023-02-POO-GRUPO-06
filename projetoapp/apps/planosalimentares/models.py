@@ -3,6 +3,9 @@ from treinos.models import Treino
 from treinadores.models import Treinador
 from clientes.models import Cliente
 from exercicios.models import Exercicio
+from nutricionistas.models import Nutricionista
+from alimentos.models import Alimento
+
 
 # Create your models here.
 class Planoalimentar(models.Model):

@@ -1,5 +1,5 @@
 from django.db import models
-from academia.models import Academia
+from academias.models import Academia
 
 # Create your models here.
 
