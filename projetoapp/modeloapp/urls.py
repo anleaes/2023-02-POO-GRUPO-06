@@ -18,12 +18,12 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('Academia/', include('Academia.urls', namespace='Academia')),
-    path('Cliente/', include('Cliente.urls', namespace='cliente')),
-    path('treinos/', include('treinos.urls', namespace='treinos')),
-    path('Treinador/', include('Treinador.urls', namespace='Treinador')),
-    path('Exercicio/', include('Exercicio.urls', namespace='Exercicio')),
-    path('Nutricionista/', include('Nutricionista.urls', namespace='Nutricionista')),
-    path('Alimento/', include('Alimento.urls', namespace='Alimento')),
+    path('academia/', include('academia.urls', namespace='academia')),
+    path('cliente/', include('cliente.urls', namespace='cliente')),
+    path('treino/', include('treino.urls', namespace='treino')),
+    path('treinador/', include('treinador.urls', namespace='treinador')),
+    path('exercicio/', include('exercicio.urls', namespace='exercicio')),
+    path('nutricionista/', include('nutricionista.urls', namespace='nutricionista')),
+    path('alimento/', include('alimento.urls', namespace='alimento')),
     path('planoalimentar/', include('planoalimentar.urls', namespace='planoalimentar')),
 ]
