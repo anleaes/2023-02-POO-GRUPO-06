@@ -7,6 +7,6 @@ from rest_framework import viewsets
 from .serializer import AlimentoSerializer
 
 
-class ExercicioViewSet(viewsets.ModelViewSet):
+class AlimentoViewSet(viewsets.ModelViewSet):
     queryset = Alimento.objects.all()
     serializer_class = AlimentoSerializer

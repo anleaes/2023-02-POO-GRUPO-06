@@ -3,7 +3,7 @@ from rest_framework import serializers
 
 class ClienteSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Alimento
+        model = Cliente
         fields = '__all__'
         
         # Para chamar todos os atributos:
