@@ -48,14 +48,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'academia.apps.AcademiaConfig',
-    'treino.apps.TreinoConfig',
-    'planoalimentar.apps.PlanoalimentarConfig',
-    'treinador.apps.TreinadorConfig',
-    'cliente.apps.ClienteConfig',
-    'alimento.apps.AlimentoConfig',
-    'exercicio.apps.ExercicioConfig',
-    'nutricionista.apps.NutricionistaConfig',
+    'academias.apps.AcademiasConfig',
+    'treinos.apps.TreinosConfig',
+    'planosalimentares.apps.PlanosalimentaresConfig',
+    'treinadores.apps.TreinadoresConfig',
+    'clientes.apps.ClientesConfig',
+    'alimentos.apps.AlimentosConfig',
+    'exercicios.apps.ExerciciosConfig',
+    'nutricionistas.apps.NutricionistasConfig',
     
     
 ]
